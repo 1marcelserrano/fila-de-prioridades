@@ -6,7 +6,7 @@
 
 **Importante** é o que serve aos objetivos, projetos e marcos que a pessoa declarou no setup. No jig original: "um marco relevante ou uma dependência pode ser afetado". Os dois critérios convivem: serve a um objetivo declarado OU afeta um marco ou dependência.
 
-**Armadilha a evitar.** O estudo "Mere Urgency Effect" (Zhu, Yang e Hsee, 2018, Journal of Consumer Research) mostra que as pessoas escolhem tarefas de menor retorno só porque parecem urgentes. Por isso a palavra "urgente", pontos de exclamação, "última chance" e contagens regressivas de marketing não tornam nada urgente. Exige-se um prazo ou consequência verificável na fonte.
+**Armadilha a evitar.** O estudo "The Mere Urgency Effect" (Zhu, Yang e Hsee, Journal of Consumer Research 45(3), 673-690, 2018) mostra que as pessoas tendem a escolher a tarefa urgente em vez da importante, mesmo quando a urgente rende menos, só porque o prazo é mais curto. O estudo trata de prazos curtos, não de palavras em assunto de e-mail: a regra a seguir é uma aplicação desta skill, por precaução. A palavra "urgente", pontos de exclamação, "última chance" e contagens regressivas de marketing não tornam nada urgente. Exige-se um prazo ou consequência verificável na fonte.
 
 **Quadrantes e verbo de cada um**
 

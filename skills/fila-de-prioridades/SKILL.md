@@ -1,6 +1,6 @@
 ---
 name: fila-de-prioridades
-version: 0.2.2
+version: 0.2.3
 description: >-
   Gera a Fila de Prioridades: uma matriz Urgente × Importante (Eisenhower) em HTML,
   montada com os dados reais da pessoa (Gmail, Google Calendar, Google Drive,
@@ -62,7 +62,7 @@ Modelo do perfil: `templates/perfil.md`.
 ## Referências
 
 - `references/criterios.md`: definições de urgente e importante, a pesquisa por trás, a lógica de dúvida e o formato de cada ação.
-- `references/conectores.md`: como detectar e ativar Gmail, Calendar e Drive no Claude Desktop/Cowork e no Claude Code, e como agendar no computador e na nuvem (item 5B, com o que foi testado e os limites).
+- `references/conectores.md`: como detectar e ativar Gmail, Calendar e Drive no Claude Desktop e no Claude Code, e como agendar no computador e na nuvem (item 5B, com o que foi testado e os limites).
 - `templates/matriz.html` + `scripts/render.py`: o HTML do jig em português e o gerador que injeta os dados. O visual segue o design system Primer (GitHub) em dois temas, Claro e Escuro; abre no claro e lembra a última escolha no navegador (tokens lidos de @primer/primitives).
 
 ## Origem
