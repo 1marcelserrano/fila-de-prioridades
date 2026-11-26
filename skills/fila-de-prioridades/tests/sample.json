@@ -1,0 +1,17 @@
+{
+  "title": "Sua matriz de terça",
+  "clock": "ter 27 out 2026 · 08:30 · rodada diária",
+  "periodo": "rodada diária",
+  "rules": {
+    "urgent": "prazo ou custo de atraso real dentro de hoje.",
+    "important": "serve aos objetivos e projetos que você declarou.",
+    "note": "Urgente exige prazo ou custo de atraso real; a palavra \"urgente\" no assunto não basta."
+  },
+  "footer": "Fila de Prioridades · gerada em 27 out 2026",
+  "items": [
+    {"id":"A","project":"Proposta Alfa","action":"Enviar a proposta revisada ao cliente","due":"Hoje até 12:00","sortDeadline":202610271200,"stage":"O cliente espera a versão final antes da reunião das 14:00.","urgent":true,"important":true,"owner":"Você","previous":"Proposta v2 enviada na segunda.","change":"Cliente pediu ajuste no escopo.","reason":"Prazo hoje e contrato em jogo.","evidence":[{"source":"E-mail do cliente · seg 26 out, 18:10","text":"Podemos ver a versão final até meio-dia de amanhã?"}]},
+    {"id":"B","project":"Curso","action":"Fechar a pauta da aula 3","due":"Qui 29 out","sortDeadline":202610290000,"stage":"A gravação é na sexta.","urgent":false,"important":true,"owner":"Você","previous":"Pauta em rascunho.","change":"Sem mudança.","reason":"Serve ao objetivo do trimestre; sem prazo hoje.","evidence":[{"source":"Evento da agenda · qui 29 out","text":"Gravação da aula 3 na sexta."}]},
+    {"id":"C","project":"Newsletter externa","action":"Responder pedido de depoimento para um boletim","due":"Hoje","sortDeadline":202610271700,"stage":"Resposta curta pedida.","urgent":true,"important":false,"owner":"Você","previous":"-","change":"Segundo lembrete.","reason":"Pedem resposta hoje, mas não afeta nenhum projeto seu.","duvida":"Você quer manter esse tipo de pedido fora das suas metas?","evidence":[{"source":"E-mail do boletim · ter 27 out, 07:30","text":"Poderia mandar duas linhas de depoimento ainda hoje?"}]},
+    {"id":"D","project":"Promoções","action":"Ler e-mail \"URGENTE: oferta acaba\" de uma loja","due":"Sem prazo","sortDeadline":null,"stage":"Marketing com a palavra urgente no assunto.","urgent":false,"important":false,"owner":"","previous":"-","change":"-","reason":"Sem prazo real nem relação com seus projetos.","evidence":[{"source":"Loja · hoje, 07:00","text":"</script><b>URGENTE</b>: oferta acaba hoje!"}]}
+  ]
+}
