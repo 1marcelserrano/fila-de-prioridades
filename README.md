@@ -32,11 +32,11 @@ Uma skill é um conjunto de instruções que ensina o Claude a fazer uma tarefa 
 
 1. [Baixe o arquivo fila-de-prioridades.skill](https://github.com/1marcelserrano/fila-de-prioridades/raw/main/fila-de-prioridades.skill).
 2. Abra o Claude e entre em Customize, o menu das suas skills.
-3. Clique no sinal de + e escolha enviar uma skill (Upload a skill). Selecione o arquivo baixado. Se o Claude recusar, troque o final do nome de `.skill` para `.zip` e envie de novo.
-4. Ligue a chave ao lado de Fila de Prioridades.
+3. Clique em + Add e escolha enviar uma skill (Upload a skill). Selecione o arquivo baixado. Se o Claude recusar, troque o final do nome de `.skill` para `.zip` e envie de novo.
+4. Confira se a chave ao lado de Fila de Prioridades está ligada. Ela já vem ligada.
 5. Abra uma conversa nova, clique no + do campo de mensagem, passe o mouse em Connectors e ligue o Gmail e o Google Calendar.
 
-Esse caminho segue a documentação do Claude e ainda não foi testado por alguém que não seja o autor.
+O autor testou o envio do arquivo `.skill` por esse caminho em uma conta: o Claude aceitou direto, sem renomear, e a skill já entrou ativada. O trecho sobre trocar para `.zip` não foi preciso nesse teste. Ainda falta alguém que não seja o autor seguir só este passo a passo.
 
 <details>
 <summary>Para quem já usa o terminal</summary>
@@ -92,6 +92,7 @@ Para quem decide muita coisa por e-mail e agenda, vive com a caixa de entrada ch
 
 Sem rodeio, para você saber no que está pisando:
 
+- Envio do arquivo `.skill` em Customize, Skills, + Add, Upload a skill, pelo autor: aceito direto, sem renomear, já ativado.
 - Rodada real no Claude Desktop, com Gmail e Calendar de uma conta de verdade, em execução manual: funcionou.
 - Rotina de teste na nuvem, de uso único: leu Gmail e Calendar, gerou a página e fez o commit.
 - **Ainda não provado:** o disparo recorrente por horário e o setup completo por quem não é o autor.
