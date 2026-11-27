@@ -29,6 +29,7 @@ venv/
 dist/
 build/
 *.skill
+!/fila-de-prioridades.skill
 
 # ── Bloco canônico de segredos MSCS ──────────────────────────────
 # Asset compartilhado (P0 · Hardening de Segredos). Todo repo MSCS nasce com isto.

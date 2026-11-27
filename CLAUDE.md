@@ -12,6 +12,10 @@ A single Claude skill distributed as a public GitHub repo. The single source of 
 | `skills/fila-de-prioridades/README.md` | Per-skill technical notes (install, files). |
 | `README.md` (root) | Product front door. Optimize for non-technical readers. The Before/After table is the pitch. |
 | `CONTRIBUTING.md` | How to contribute. |
+| `assets/social-preview.html` and `.png` | Social preview of the repo (1280x640, rendered at 2x). Rebuilt from the HTML with Chrome headless. |
+| `assets/social-preview-upload.jpg` | Same card as JPEG under 1 MB, for the manual upload in Settings, Social preview (GitHub's limit). |
+| `page/index.html` | Copy of the published presentation page, with `exemplo-matriz.png` beside it. |
+| `fila-de-prioridades.skill` | Zip of `skills/fila-de-prioridades`, for installing without a terminal. Rebuild after any change to the skill. |
 
 ## What NOT to edit
 
