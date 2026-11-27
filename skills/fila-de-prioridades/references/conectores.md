@@ -4,7 +4,7 @@ Princípio: tente primeiro, pergunte depois. Confira o que o ambiente já tem an
 
 ## 1. Detectar o ambiente
 
-- Há ferramentas de tarefas agendadas e conectores listados na sessão, e a pessoa não fala em terminal: provavelmente **Claude Desktop / Cowork**.
+- Há ferramentas de tarefas agendadas e conectores listados na sessão, e a pessoa não fala em terminal: provavelmente **Claude Desktop**.
 - A sessão roda em terminal ou na aba de código com arquivos de projeto: **Claude Code**.
 - Registre o ambiente no perfil.
 
@@ -19,7 +19,7 @@ Procure nas ferramentas disponíveis (ou na lista de conectores) por Gmail (busc
 
 Tente o caminho que não exige a pessoa: se houver ferramenta para ligar ou reconectar conectores da sessão, use e teste de novo. Se o conector exige login do Google, a pessoa precisa fazer esse clique. Oriente assim, curto e numerado:
 
-**Claude Desktop / Cowork**
+**Claude Desktop**
 1. Abra as configurações do app e procure a área de Conectores (ou Integrações).
 2. Localize Gmail (e Google Calendar, Google Drive se for usar), clique em Conectar.
 3. Entre com a conta do Google que ela quer usar e aprove o acesso de leitura.
@@ -42,7 +42,7 @@ Texto colado ou arquivo: a pessoa cola o conteúdo ou aponta um arquivo (e-mail 
 Objetivo: a rodada roda sozinha na frequência e no horário do perfil, executando `modes/rodada.md` desta skill.
 
 Ordem de tentativa:
-1. **Tarefas agendadas do próprio ambiente** (Cowork ou ferramenta de tarefa agendada disponível na sessão): crie a tarefa com o prompt abaixo, no horário e fuso do perfil, e rode uma vez agora para confirmar.
+1. **Tarefas agendadas do próprio ambiente** (a ferramenta de tarefa agendada disponível na sessão): crie a tarefa com o prompt abaixo, no horário e fuso do perfil, e rode uma vez agora para confirmar.
 2. **Claude Code:** uma rotina na nuvem (`/schedule`) não enxerga a pasta local nem conectores locais. Para rodar sem o computador, use o item 5B (repositório privado e conectores da conta). Para pasta local, a tarefa só dispara com o app ou a sessão aberta; diga isso em uma frase.
 3. **Nada disponível:** entregue o prompt e um passo a passo de 3 linhas para a pessoa criar o agendamento na tela de tarefas agendadas do app. Ofereça também o gatilho manual: dizer "rodar a fila de prioridades".
 
@@ -74,7 +74,7 @@ Avisos honestos a dar à pessoa, sem alarmar:
 
 A rodada roda num servidor da Anthropic, num horário fixo, mesmo com o computador desligado.
 
-**Só ofereça a nuvem quando der para fazer.** Antes de perguntar "computador ou nuvem", confira: (1) o ambiente é o Claude Code, (2) `gh auth status` mostra login, (3) a ferramenta de rotinas (`RemoteTrigger`) está disponível. Faltando qualquer um, **não mencione a nuvem**: siga pelo item 5. No Desktop e no Cowork, em geral, a nuvem não está disponível.
+**Só ofereça a nuvem quando der para fazer.** Antes de perguntar "computador ou nuvem", confira: (1) o ambiente é o Claude Code, (2) `gh auth status` mostra login, (3) a ferramenta de rotinas (`RemoteTrigger`) está disponível. Faltando qualquer um, **não mencione a nuvem**: siga pelo item 5. No Claude Desktop, em geral, a nuvem não está disponível.
 
 **O que foi testado (Claude Code, 26/11/2026, uma rotina de uso único numa conta real):** a rotina clonou um repositório privado, leu Gmail (6 threads) e Calendar (4 agendas, 2 eventos) pelos conectores da conta, rodou `python3 scripts/render.py` (`ok: 4 ações`) e fez commit e push, em cerca de 30 segundos, sem o computador do usuário envolvido. O Drive só teve as ferramentas listadas, sem chamada. **Não foi testado:** o disparo recorrente por horário, o fluxo de setup montado de ponta a ponta com uma pessoa, e a rodada completa com dados reais na nuvem. Fale em três estados, e só afirme o que ocorreu: "rotina criada", "execução manual conferida" e "recorrência conferida" (esta só depois de um disparo real no horário).
 

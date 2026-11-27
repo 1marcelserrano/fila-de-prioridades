@@ -62,7 +62,7 @@ Sem rodeio, para você saber no que está pisando:
 
 - Rodada real no Claude Desktop, com Gmail e Calendar de uma conta de verdade, em execução manual: funcionou.
 - Rotina de teste na nuvem, de uso único: leu Gmail e Calendar, gerou a página e fez o commit.
-- **Ainda não provado:** o disparo recorrente por horário, o uso no Cowork e o setup completo por quem não é o autor.
+- **Ainda não provado:** o disparo recorrente por horário e o setup completo por quem não é o autor.
 - **Atenção:** "somente leitura" é uma regra da skill e do prompt, não um bloqueio técnico. A tarefa agendada enxerga as ferramentas de enviar e apagar e-mail. Leia o item sobre isso no arquivo `skills/fila-de-prioridades/references/conectores.md` antes de agendar.
 
 ## Comunidade gratuita
