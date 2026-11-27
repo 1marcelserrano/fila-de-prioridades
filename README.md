@@ -24,19 +24,36 @@ A skill não confia na palavra "urgente". Urgente é o que tem prazo ou custo de
 
 ## Instalar
 
-Precisa de Python 3 no computador (o script que monta a página). Copie a pasta da skill para a pasta de skills do seu Claude:
+Uma skill é um conjunto de instruções que ensina o Claude a fazer uma tarefa do jeito certo. Você instala uma vez e depois chama pelo nome. Leva alguns minutos, sem terminal.
+
+**O que você precisa ter:** uma conta no Claude, uma conta Google com Gmail e Google Agenda, e o programa Python no computador (o Claude confere sozinho e explica como instalar se faltar). Se o seu Claude é da empresa, o administrador pode precisar liberar o envio de skills, o Gmail e a agenda.
+
+**Antes de ligar o Gmail:** a skill foi escrita para só ler os seus e-mails. Isso é uma regra do texto da skill, não um bloqueio do sistema. Quando o Claude pedir permissão, dê só a de leitura sempre que essa opção aparecer.
+
+1. [Baixe o arquivo fila-de-prioridades.skill](https://github.com/1marcelserrano/fila-de-prioridades/raw/main/fila-de-prioridades.skill).
+2. Abra o Claude e entre em Customize, o menu das suas skills.
+3. Clique no sinal de + e escolha enviar uma skill (Upload a skill). Selecione o arquivo baixado. Se o Claude recusar, troque o final do nome de `.skill` para `.zip` e envie de novo.
+4. Ligue a chave ao lado de Fila de Prioridades.
+5. Abra uma conversa nova, clique no + do campo de mensagem, passe o mouse em Connectors e ligue o Gmail e o Google Calendar.
+
+Esse caminho segue a documentação do Claude e ainda não foi testado por alguém que não seja o autor.
+
+<details>
+<summary>Para quem já usa o terminal</summary>
 
 ```bash
 git clone https://github.com/1marcelserrano/fila-de-prioridades.git
 cp -r fila-de-prioridades/skills/fila-de-prioridades ~/.claude/skills/
 ```
 
+</details>
+
 ## Como usar
 
-1. **Conecte** o Gmail e o Google Calendar ao Claude (Claude Code ou Claude Desktop).
-2. **Abra uma conversa nova** e peça: "configurar minha fila".
-3. **Responda às perguntas**, uma por vez (a tabela abaixo mostra quais são). A skill faz uma prévia com os seus dados reais e você diz se está certa.
-4. **Receba a matriz** no horário que escolheu e abra o arquivo no navegador. Se uma classificação estiver errada, diga "ajustar minha fila" e ela transforma a sua correção numa regra.
+1. **Abra uma conversa nova** e escreva: "configurar minha fila".
+2. **Responda às perguntas**, uma por vez (a tabela abaixo mostra quais são). A skill faz uma prévia com os seus dados reais e você diz se está certa. Na primeira vez leva de 10 a 20 minutos.
+3. **Receba a matriz** no horário que escolheu e abra o arquivo no navegador (clique duas vezes nele). A rodada no horário só acontece com o Claude aberto no seu computador. Para gerar na hora, escreva "rodar a fila de prioridades".
+4. **Corrija o que estiver errado.** Se uma classificação estiver errada, escreva "ajustar minha fila" e ela transforma a sua correção numa regra.
 
 Frases que ativam a skill: "fila de prioridades", "matriz da manhã", "matriz urgente e importante", "resumo da manhã dos meus e-mails", "o que resolver primeiro". Em linguagem natural também funciona: "me mostra o que eu preciso resolver primeiro hoje".
 
