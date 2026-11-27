@@ -84,7 +84,7 @@ Para quem decide muita coisa por e-mail e agenda, vive com a caixa de entrada ch
 | Faz | Não faz |
 |-----|---------|
 | Lê Gmail e Calendar e monta a matriz com prazo, motivo e fonte | Não envia, apaga, arquiva nem marca e-mails, por regra da skill |
-| Agenda a rodada diária ou semanal | Não promete rodar sozinha com o computador desligado, a não ser no modo nuvem, opcional e ainda em validação |
+| Agenda a rodada diária ou semanal | Não promete rodar sozinha com o Claude fechado: no computador ela roda no horário só com o app aberto, e o modo nuvem, opcional, ainda está em validação |
 | Avisa quando uma fonte falha em vez de gerar uma matriz vazia | Não troca o seu julgamento: classifica pelo mais provável e deixa a dúvida visível |
 | Trata pedidos de pagamento de remetente desconhecido como possível golpe | Não abre nem reproduz links de e-mails |
 
@@ -95,7 +95,8 @@ Sem rodeio, para você saber no que está pisando:
 - Envio do arquivo `.skill` em Customize, Skills, + Add, Upload a skill, pelo autor: aceito direto, sem renomear, já ativado.
 - Rodada real no Claude Desktop, com Gmail e Calendar de uma conta de verdade, em execução manual: funcionou.
 - Rotina de teste na nuvem, de uso único: leu Gmail e Calendar, gerou a página e fez o commit.
-- **Ainda não provado:** o disparo recorrente por horário e o setup completo por quem não é o autor.
+- Rodada diária no horário, no computador: a tarefa agendada disparou sozinha às 7h02 de 27/11/2026, com o Claude aberto, e gravou a matriz do dia. Foi um dia, uma conta e uma pessoa.
+- **Ainda não provado:** a rodada com o Claude fechado (a documentação da ferramenta diz que ela roda na próxima abertura, mas ninguém testou), a rodada recorrente na nuvem e o setup completo por quem não é o autor.
 - **Atenção:** "somente leitura" é uma regra da skill e do prompt, não um bloqueio técnico. A tarefa agendada enxerga as ferramentas de enviar e apagar e-mail. Leia o item sobre isso no arquivo `skills/fila-de-prioridades/references/conectores.md` antes de agendar.
 
 ## Fontes
