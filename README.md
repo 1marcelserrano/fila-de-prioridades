@@ -2,7 +2,7 @@
 
 **Pare de decidir o seu dia pelo assunto em maiúsculas. Toda manhã, uma matriz Urgente × Importante feita com os seus e-mails e a sua agenda de verdade.**
 
-[Página de apresentação](https://fila-de-prioridades-page.vercel.app) • [Veja como fica](#veja-como-fica) • [Instalar](#instalar) • [Como usar](#como-usar) • [O que foi testado](#o-que-foi-testado) • [Comunidade](#comunidade-gratuita)
+[Página de apresentação](https://mscreative.systems/arsenal/fila-de-prioridades) • [Veja como fica](#veja-como-fica) • [Instalar](#instalar) • [Como usar](#como-usar) • [O que foi testado](#o-que-foi-testado) • [Comunidade](#comunidade-gratuita)
 
 ---
 
